@@ -1,0 +1,9 @@
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\Views\Index.cshtml
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\fsharpexample.deps.json
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\fsharpexample.runtimeconfig.json
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\fsharpexample.runtimeconfig.dev.json
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\fsharpexample.dll
+I:\Programming\initdocker\fsharpexample\bin\Debug\netcoreapp2.0\fsharpexample.pdb
+I:\Programming\initdocker\fsharpexample\obj\Debug\netcoreapp2.0\fsharpexample.fsproj.CoreCompileInputs.cache
+I:\Programming\initdocker\fsharpexample\obj\Debug\netcoreapp2.0\fsharpexample.dll
+I:\Programming\initdocker\fsharpexample\obj\Debug\netcoreapp2.0\fsharpexample.pdb

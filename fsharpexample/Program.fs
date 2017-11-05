@@ -40,7 +40,7 @@ let errorHandler (ex : Exception) (logger : ILogger) =
 // ---------------------------------
 
 let configureCors (builder : CorsPolicyBuilder) =
-    builder.WithOrigins("http://localhost:8080").AllowAnyMethod().AllowAnyHeader() |> ignore
+    builder.WithOrigins("http://*:8080").AllowAnyMethod().AllowAnyHeader() |> ignore
 
 let configureApp (app : IApplicationBuilder) =
     app.UseCors(configureCors)
@@ -56,7 +56,7 @@ let configureServices (services : IServiceCollection) =
     services.AddCors() |> ignore
 
 let configureLogging (builder : ILoggingBuilder) =
-    let filter (l : LogLevel) = l.Equals LogLevel.Error
+    let filter (l : LogLevel) = l.Equals LogLevel.Debug
     builder.AddFilter(filter).AddConsole().AddDebug() |> ignore
 
 [<EntryPoint>]
@@ -68,6 +68,7 @@ let main argv =
         .UseContentRoot(contentRoot)
         .UseIISIntegration()
         .UseWebRoot(webRoot)
+        .UseUrls("http://*:5000")
         .Configure(Action<IApplicationBuilder> configureApp)
         .ConfigureServices(configureServices)
         .ConfigureLogging(configureLogging)
